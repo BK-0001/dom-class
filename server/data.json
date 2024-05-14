@@ -1,0 +1,68 @@
+{
+  "pokemons": [
+    {
+      "abilities": ["Overgrow"],
+      "detailPageURL": "/us/pokedex/bulbasaur",
+      "weight": 15.2,
+      "weakness": ["Fire", "Psychic", "Flying", "Ice"],
+      "number": "0001",
+      "height": 28,
+      "collectibles_slug": "bulbasaur",
+      "featured": "true",
+      "slug": "bulbasaur",
+      "name": "Bulbasaur",
+      "ThumbnailAltText": "Bulbasaur",
+      "ThumbnailImage": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/detail/001.png",
+      "id": 1,
+      "type": ["grass", "poison"]
+    },
+    {
+      "abilities": ["Overgrow"],
+      "detailPageURL": "/us/pokedex/ivysaur",
+      "weight": 28.7,
+      "weakness": ["Fire", "Psychic", "Flying", "Ice"],
+      "number": "0002",
+      "height": 39,
+      "collectibles_slug": "ivysaur",
+      "featured": "true",
+      "slug": "ivysaur",
+      "name": "Ivysaur",
+      "ThumbnailAltText": "Ivysaur",
+      "ThumbnailImage": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/detail/002.png",
+      "id": 2,
+      "type": ["grass", "poison"]
+    },
+    {
+      "abilities": ["Overgrow"],
+      "detailPageURL": "/us/pokedex/venusaur",
+      "weight": 9999,
+      "weakness": ["Fire", "Psychic", "Flying", "Ice"],
+      "number": "0003",
+      "height": 945,
+      "collectibles_slug": "venusaur",
+      "featured": "true",
+      "slug": "venusaur",
+      "name": "Venusaur",
+      "ThumbnailAltText": "Venusaur",
+      "ThumbnailImage": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/detail/003.png",
+      "id": 3,
+      "type": ["grass", "poison"]
+    },
+    {
+      "abilities": ["Blaze"],
+      "detailPageURL": "/us/pokedex/charmander",
+      "weight": 18.7,
+      "weakness": ["Water", "Ground", "Rock"],
+      "number": "0004",
+      "height": 24,
+      "collectibles_slug": "charmander",
+      "featured": "true",
+      "slug": "charmander",
+      "name": "Charmander",
+      "ThumbnailAltText": "Charmander",
+      "ThumbnailImage": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/detail/004.png",
+      "id": 4,
+      "type": ["fire"]
+    }
+  ]
+}
