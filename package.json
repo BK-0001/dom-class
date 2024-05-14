@@ -7,7 +7,8 @@
   "scripts": {
     "css": "sass -w src/sass:src/css",
     "html": "live-server src --open=pages/index.html",
-    "dev": "concurrently 'npm run css' 'npm run html'"
+    "server": "json-server server/data.json --port=3005",
+    "dev": "concurrently 'npm run server' 'npm run css' 'npm run html'"
   },
   "keywords": [],
   "author": "",
