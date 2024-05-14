@@ -1,10 +1,8 @@
+import { Component } from "../common/component.js";
+
 const BASE_CLASS = "header";
 
-export class Header {
-  constructor() {
-    this.render();
-  }
-
+export class Header extends Component {
   render() {
     const children = $(`
       <header class="${BASE_CLASS}">
@@ -14,6 +12,6 @@ export class Header {
       </header>
     `);
 
-    $("#app").append(children);
+    this.parentElement.append(children);
   }
 }

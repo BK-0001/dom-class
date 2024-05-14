@@ -1,5 +1,7 @@
 import { App } from "./app.js";
 
 $(() => {
-  new App();
+  const rootElement = $("#app");
+
+  new App(rootElement);
 });
