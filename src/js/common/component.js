@@ -1,15 +1,21 @@
 export class Component {
   #parentElement;
   #state;
+  #props;
 
-  constructor(parentElement) {
+  constructor(parentElement, props = {}) {
     if (this.constructor.name === "Component") {
       throw new Error("Abstract class cannot be instantiated!");
     }
     this.#state = {};
     this.#parentElement = parentElement;
+    this.#props = props;
 
     this.render();
+  }
+
+  get props() {
+    return this.#props;
   }
 
   get state() {

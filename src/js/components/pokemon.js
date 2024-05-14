@@ -1,4 +1,5 @@
 import { Component } from "../common/component.js";
+import { PokemonItem } from "./pokemonItem.js";
 
 const BASE_CLASS = "pokemon";
 
@@ -31,21 +32,7 @@ export class Pokemon extends Component {
     `);
 
     (this.state.pokemonData || []).forEach((pokemon) => {
-      const item = $(`<li>${pokemon.name}</li>`);
-
-      item.on("click", () => {
-        const copied = [...this.state.pokemonData];
-        const index = copied.findIndex((poke) => poke.id === pokemon.id);
-
-        if (index === -1) {
-          alert(`pokemon not found with id: ${pokemon.id}`);
-        } else {
-          copied.splice(index, 1);
-          this.setState({ pokemonData: copied });
-        }
-      });
-
-      children.find("ul").append(item);
+      new PokemonItem(children.find("ul"), { pokemon });
     });
 
     this.parentElement.append(children);
