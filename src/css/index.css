@@ -1,0 +1,29 @@
+.container, .header__wrapper {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 120%;
+}
+
+.header {
+  padding: 24px;
+  background-color: red;
+  color: white;
+  position: sticky;
+  top: 0;
+}
+.header__title {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+/*# sourceMappingURL=index.css.map */

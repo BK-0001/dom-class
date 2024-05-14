@@ -3,8 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "css": "sass -w src/sass:src/css",
+    "html": "live-server src --open=pages/index.html",
+    "dev": "concurrently 'npm run css' 'npm run html'"
   },
   "keywords": [],
   "author": "",
