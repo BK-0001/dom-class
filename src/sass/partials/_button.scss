@@ -1,0 +1,41 @@
+$class: button;
+
+.#{$class} {
+  border: none;
+  border-radius: 8px;
+  padding: 12px 16px;
+  background-color: red;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+  &:not(:disabled) {
+    &:hover {
+      transform: translateY(-1px);
+      opacity: 0.8;
+    }
+
+    &:active {
+      transform: translateY(1px);
+      box-shadow: none;
+    }
+
+    &:focus-visible {
+      outline: 2px dashed red;
+      outline-offset: 4px;
+    }
+  }
+
+  &:disabled {
+    background-color: rgb(202, 202, 202);
+    color: rgb(234, 234, 234);
+    box-shadow: none;
+    cursor: not-allowed;
+  }
+
+  &--full {
+    width: 100%;
+  }
+}

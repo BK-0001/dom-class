@@ -11,7 +11,7 @@ export class PokemonItem extends Component {
         <h1 class="${BASE_CLASS}__title">${name}</h1>
         <img class="${BASE_CLASS}__img" src="${ThumbnailImage}" alt="${ThumbnailAltText}">
 
-        <button class="${BASE_CLASS}__button">Capture</button>
+        <button class="button button--full ${BASE_CLASS}__button">Capture</button>
       </li>
     `);
 

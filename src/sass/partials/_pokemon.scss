@@ -1,0 +1,17 @@
+$class: pokemon;
+
+.#{$class} {
+  &__title {
+    margin-bottom: 16px;
+  }
+
+  &__list {
+    display: grid;
+    gap: 24px;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: rgb(253, 230, 230);
+    padding: 24px;
+    border-radius: 24px;
+    text-align: center;
+  }
+}
