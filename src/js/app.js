@@ -1,5 +1,6 @@
 import { Component } from "./common/component.js";
 import { Header } from "./components/header.js";
+import { Pokedex } from "./components/pokedex.js";
 import { Pokemon } from "./components/pokemon.js";
 
 export class App extends Component {
@@ -11,6 +12,7 @@ export class App extends Component {
     `);
 
     new Pokemon(children);
+    new Pokedex(children);
 
     this.parentElement.append(children);
   }

@@ -15,6 +15,15 @@ export class PokemonItem extends Component {
       </li>
     `);
 
+    item.find("button").on("click", () => {
+      const pokemonElement = $(`
+        <li>${name}</li>
+      `);
+      const parent = $(".pokedex__list");
+
+      parent.append(pokemonElement);
+    });
+
     this.parentElement.append(item);
   }
 }

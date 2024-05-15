@@ -1,18 +1,15 @@
 import { Component } from "../common/component.js";
-import { PokemonList } from "./pokemonList.js";
 
-const BASE_CLASS = "pokemon";
+const BASE_CLASS = "pokedex";
 
-export class Pokemon extends Component {
+export class Pokedex extends Component {
   render() {
     const children = $(`
       <div class="${BASE_CLASS}">
-        <h1 class="${BASE_CLASS}__title">Wild Pokemons</h1>
+        <h1 class="${BASE_CLASS}__title">PokeDex</h1>
         <ul class="${BASE_CLASS}__list"></ul>
       </div>
     `);
-
-    new PokemonList(children.find("ul"));
 
     this.parentElement.append(children);
   }
