@@ -5,7 +5,6 @@ export class PokemonList extends Component {
   constructor(parentElement) {
     super(parentElement);
 
-    // all data would go in here
     this.getPokemonData();
   }
 

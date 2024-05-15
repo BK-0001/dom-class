@@ -1,8 +1,13 @@
 import { Component } from "../common/component.js";
+import { PokedexContext } from "../context/pokedexContext.js";
 
 const BASE_CLASS = "pokemon-item";
 
 export class PokemonItem extends Component {
+  constructor(parentElement, props) {
+    super(parentElement, props, { pokedex: PokedexContext.getInstance() });
+  }
+
   render() {
     const { name, ThumbnailImage, ThumbnailAltText } = this.props.pokemon;
 
@@ -16,12 +21,7 @@ export class PokemonItem extends Component {
     `);
 
     item.find("button").on("click", () => {
-      const pokemonElement = $(`
-        <li>${name}</li>
-      `);
-      const parent = $(".pokedex__list");
-
-      parent.append(pokemonElement);
+      this.context.pokedex.capturePokemon(this.props.pokemon);
     });
 
     this.parentElement.append(item);
