@@ -1,9 +1,11 @@
 export class PokedexContext {
   static instance;
   #items;
+  #stateChangeListeners;
 
   constructor() {
     this.#items = [];
+    this.#stateChangeListeners = [];
   }
 
   static getInstance() {
@@ -18,8 +20,16 @@ export class PokedexContext {
     return this.#items;
   }
 
+  addStateChangeListener(func) {
+    this.#stateChangeListeners.push(func);
+  }
+
   capturePokemon(pokemon) {
     this.#items.push(pokemon);
+
+    this.#stateChangeListeners.forEach((func) => {
+      func();
+    });
   }
 
   releasePokemon(id) {
